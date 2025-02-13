@@ -16,8 +16,8 @@ class Main_page(Base):
 
     main_button = '//button[@class="c-button-unstyled hamburger-menu-button"]'
     menu_scroll = '//ul[@class="hamburger-menu-flyout-list"]'
-    electric_transportation_button = '//button[@data-id="node-1113"]'
-    scooter_button = '//button[@data-id="node-1087"]'
+    electric_transportation_button = "//button[starts-with(@data-id, \"node-\") and contains(text(), \"Electric Transportation\")]"
+    scooter_button = '//*[contains(text(), "Electric Scooters")]'
     scooter_adult_button = '//*[contains(text(), "Adult Electric Scooters")]'
 
     # Getters: Methods to retrieve the web elements based on the defined locators
