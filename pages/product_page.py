@@ -17,7 +17,7 @@ class Product_page(Base):
 
     filters_scroll = '//div[@class="sticky-container lv"]'
     features_input_1 = '//input[@id="features_facet-Foldable-Design-0"]'
-    features_input_2 = '//input[@id="features_facet-App-Compatible-1"]'
+    features_input_2 = '//input[@aria-label="App Compatible"]'
     price_range_1 = '//input[@placeholder="min."]'
     price_range_2 = '//input[@placeholder="max."]'
     button_enter_price = '//button[@class="c-button-link range-submit"]'
